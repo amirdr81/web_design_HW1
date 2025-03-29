@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const priceFloat = parseFloat(price.value) || 0;
         const weightFloat = parseFloat(weight.value) || 0;
         const heightFloat = parseFloat(height.value) || 0;
-
-        const resultCalculator = (countFloat * feeFloat) - discountFloat;
+        
+        const resultCalculator = (feeFloat * countFloat) - discountFloat;
         const resultInsurance = (setionFloat * timeFloat) / 60 * priceFloat;
         const resultBMI = weightFloat / (heightFloat * heightFloat)
         calculatorElement.textContent = resultCalculator.toFixed(2);
