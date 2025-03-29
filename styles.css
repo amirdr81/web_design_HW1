@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h1,h3{
+    color: #2e4a2e;
+  }
+
+.introduction {
+  font-size:25pt;
+  color: #f1e3c1;
+}
+
+.note {
+  text-align: center;
+  font-size:15pt;
+  color: #f1e3c1;
+}
+
+  body { 
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #2e4a2e; /* سبز تیره */
+    color: #f1e3c1; /* رنگ قهوه‌ای روشن تقریبا کرم */
+    display: flex;
+    justify-content: flex-start; /* این باعث می‌شود که محتوا از بالا شروع شود */
+    align-items: flex-start; 
+    height: 100vh; /* ارتفاع صفحه به اندازه 100% ارتفاع نمایشگر */
+    overflow: auto;
+    padding-top: 20px;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .container {
+    background-color: #f1e3c1;
+    padding: 30px;
+    border-radius: 40px;
+    text-align: center;
+    width: 320px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #2e4a2e;
+    color: #f1e3c1;
+    text-align: center;
+    border-radius: 40px;
+    background-color: #2e4a2e; 
+  }
+  
+  input::placeholder {
+    color: #f1e3c1;
+    text-align: center;
+    
+  }
+
+  formula {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2e4a2e;
+  }

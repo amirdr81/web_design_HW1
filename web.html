@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>محاسبه قیمت</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="introduction">تمرین سری اول درس طراحی وب</h1>
+    <h3 class="note">امیرمحمد درخشنده - ۴۰۰۱۰۱۱۵۳</h3>
+    <div class="container">
+      <h1>ماشین حساب</h1>
+      <input type="text" id="fee" placeholder="واحد قیمت" />
+      <input type="text" id="count" placeholder="تعداد" />
+      <input type="text" id="discount" placeholder="تخفیف" />
+
+      <div class="result-container">
+        <h3>:قیمت نهایی شما</h3>
+        <formula id="Calculator" evaluator="count*fee-discount">0</formula>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>محاسبه حقوق استاد</h1>
+      <input
+        type="text"
+        id="setion"
+        placeholder="تعداد جلسات کلاس برگزار شده"
+      />
+      <input type="text" id="time" placeholder="زمان جلسات(به دقیقه)" />
+      <input type="text" id="price" placeholder="رقم هر ساعت" />
+
+      <div class="result-container">
+        <h3>:مبلغ نهایی دستمزد استاد</h3>
+        <formula id="Insurance" evaluator="setion * time / 60 * fee">0</formula>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>BMI محاسبه</h1>
+      <input type="text" id="height" placeholder="قد(به متر)" />
+      <input type="text" id="weight" placeholder="وزن(به کلیوگرم)" />
+
+      <div class="result-container">
+        <h3>:شما BMI مقدار</h3>
+        <formula id="BMI" evaluator="weight / (height * height)">0</formula>
+      </div>
+    </div>
+    <h3 class="note">
+      کد های موجود برای تمرین سری اول درس طراحی وب(تمرین دست گرمی) نوشته شده
+      اند. تمامی کد های موجود به کمک دانش پیشین و سرچ به دست آمده اند، صرفا
+      ساختن لاجیک برای جاوااسکریپت و دو خط در کلاس بدنه از فایل استایل به کمک
+      هوش مصنوعی طراحی شده اند(نه به طور کامل، صرفا برای یادگیری)
+    </h3>
+    <script src="web.js"></script>
+  </body>
+</html>
